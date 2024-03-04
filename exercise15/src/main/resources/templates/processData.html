@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Process</title>
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+</head>
+<body class="body" >
+<h1>Appointment details:</h1>
+<h2>Name: <span th:text="${param.firstName} + ' ' + ${param.lastName}"/></h2>
+<h2>E-mail address: <span th:text="${param.email}"/></h2>
+<h2>Date: <span th:text="${param.appDate}"/></h2>
+
+</body>
+</html>

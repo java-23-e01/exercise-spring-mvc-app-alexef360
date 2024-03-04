@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+</head>
+<body class="body">
+
+<form th:action="form" method="GET">
+    <h2>Fill the form to book an appointment </h2>
+    <input type="text" name="firstName" placeholder="Enter your name">
+    <input type="text" name="lastName" placeholder="Enter your last name">
+    <input type="email" name="email" placeholder="Enter your e-mail address">
+    <label for="appDate">Select the appointment date:</label>
+    <input type="date" id="appDate"  name="appDate">
+    <input type="submit">
+
+</form>
+
+</body>
+</html>

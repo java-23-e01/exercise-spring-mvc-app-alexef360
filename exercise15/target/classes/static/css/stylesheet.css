@@ -1,0 +1,38 @@
+/* Style for the form container */
+.body {
+    background: rgba(187, 187, 187, 0.5);
+    color: #000000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) of the container */
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="submit"] {
+    margin: 10px 0; /* Add margin between input fields */
+    padding: 8px;
+    width: 300px; /* Set a fixed width for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: auto; /* Set width to auto to adjust based on content */
+    align-self: flex-start; /* Align the button to the left side */
+    padding: 10px 20px;
+    background-color: rgba(245, 191, 232, 0.68); /* Change background color as desired */
+    color: #262626;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    /* Style for labels */
+label {
+    margin-top: 10px; /* Add margin above labels */
+}
